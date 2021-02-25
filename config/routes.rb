@@ -9,4 +9,13 @@ Rails.application.routes.draw do
   namespace :api do
     get "/laptop" => "products#laptop"
   end
+
+  namespace :api do
+    get "/hdmi" => "products#hdmi"
+  end
+
+  namespace :api do
+    get "/pen" => "products#pen"
+  end
+
 end

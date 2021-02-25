@@ -1,3 +1,6 @@
 {
-  message: "HI!!"
+  name: "Laptop",
+  price: "350",
+  img_url: "www.xyz.com",
+  description: "Lorem ibsem",
 }
