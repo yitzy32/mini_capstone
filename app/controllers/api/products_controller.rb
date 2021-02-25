@@ -10,4 +10,9 @@ class Api::ProductsController < ApplicationController
   def pen
     render "pen.json.jb"
   end
+
+  def any_product
+    @selected_product = params[:name]
+    render "any.json.jb"
+  end
 end

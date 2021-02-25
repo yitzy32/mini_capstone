@@ -16,6 +16,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/pen" => "products#pen"
+    get "/any" => "products#any_product"
   end
-
 end
