@@ -7,15 +7,19 @@ Rails.application.routes.draw do
   #   get "/photos" => "photos#index"
   # end
   namespace :api do
-    get "/laptop" => "products#laptop"
-  end
-
-  namespace :api do
-    get "/hdmi" => "products#hdmi"
-  end
-
-  namespace :api do
-    get "/pen" => "products#pen"
-    get "/any" => "products#any_product"
+    get "/products" => "products#index"
   end
 end
+# -------old way------
+# namespace :api do
+#   get "/laptop" => "products#laptop"
+# end
+
+# namespace :api do
+#   get "/hdmi" => "products#hdmi"
+# end
+
+# namespace :api do
+#   get "/pen" => "products#pen"
+#   get "/any" => "products#any_product"
+# end
