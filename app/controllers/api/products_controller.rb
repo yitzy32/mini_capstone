@@ -1,7 +1,7 @@
 class Api::ProductsController < ApplicationController
   def index
     @products = Product.all
-    render "products.json.jb"
+    render "index.json.jb"
   end
 
   def show
@@ -22,7 +22,12 @@ class Api::ProductsController < ApplicationController
   end
 
   def update
-    render "update.json.jb"
+    @id = params[:id]
+    @product = Product.find_by(id: params[:id])
+    @product.description = params[:description]
+    @product.price = params[:price]
+    @product.img_url = params[:img_url]
+    render "show.json.jb"
   end
 end
 
